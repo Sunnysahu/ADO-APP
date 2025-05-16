@@ -40,11 +40,11 @@
 
 	```
 	Console.WriteLine("Enter Name : ");
-        string name = Console.ReadLine();
-        Console.WriteLine("Enter Email : ");
-        string email = Console.ReadLine();
-        Console.WriteLine("Enter Mobile No. : ");
-        string phoneno = Console.ReadLine();
+    string name = Console.ReadLine();
+    Console.WriteLine("Enter Email : ");
+    string email = Console.ReadLine();
+    Console.WriteLine("Enter Mobile No. : ");
+    string phoneno = Console.ReadLine();
 	```
 
 	## 🧾 SQL Command Setup with Explanation
