@@ -1,16 +1,17 @@
-﻿using System.Data.SqlClient;
+﻿using ADO_APP.DB_Data;
+using System.Data.SqlClient;
 
 public class Customer
 {
     public static void Main(String[] args)
     {
         //string myConnection = "Data Source=MSI;Database=ADOTEST; Initial Catalog=sspi";
-        string myConnection = "Data Source=MSIS;Initial Catalog=ADOTEST;Integrated Security=True;";
+        
 
 
         try
         {
-            SqlConnection connection = new SqlConnection(myConnection);
+            SqlConnection connection = new SqlConnection(ConnString.GetConnectionString());
 
             connection.Open();
 
