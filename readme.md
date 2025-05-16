@@ -10,26 +10,26 @@
 3. Better is create a class and put the connection return there.
 4. Create a SP in the MYSQL 
 	```
-		use ADOTEST
+	use ADOTEST
 
-		create table tbl_customer (
-		customerid int identity primary key,
-		customername varchar(50) not null,
-		customeremail varchar(50) unique,
-		customermobile varchar(15) unique,
-		)
+	create table tbl_customer (
+	customerid int identity primary key,
+	customername varchar(50) not null,
+	customeremail varchar(50) unique,
+	customermobile varchar(15) unique,
+	)
 
-		create procedure Sp_CreateCustomer (
-		@customername varchar(50),
-		@customeremail varchar(50),
-		@customermobile varchar(15)
-		)
+	create procedure Sp_CreateCustomer (
+	@customername varchar(50),
+	@customeremail varchar(50),
+	@customermobile varchar(15)
+	)
 
-		as 
-		begin
+	as 
+	begin
 
-		insert into tbl_customer values(@customername, @customeremail, @customermobile)
-		end
+	insert into tbl_customer values(@customername, @customeremail, @customermobile)
+	end
 	```
 
 
