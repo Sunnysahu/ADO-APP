@@ -39,7 +39,7 @@
 5. Take the user Input
 
 	```
-		Console.WriteLine("Enter Name : ");
+	Console.WriteLine("Enter Name : ");
         string name = Console.ReadLine();
         Console.WriteLine("Enter Email : ");
         string email = Console.ReadLine();
