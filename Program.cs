@@ -4,7 +4,7 @@ using System.Data;
 
 public class Customer
 {
-    public static void Main(String[] args)
+    public static void Main1(String[] args)
     {
         //string myConnection = "Data Source=MSI;Database=ADOTEST; Initial Catalog=sspi";
 
@@ -25,12 +25,7 @@ public class Customer
             cmd.Parameters.Add(new SqlParameter("@customeremail", SqlDbType.VarChar, 50)).Value = email;
             cmd.Parameters.AddWithValue("@customermobile", phoneno);
 
-           
-
-
             connection.Open();
-
-
 
             Console.WriteLine("Connection Successful");
 

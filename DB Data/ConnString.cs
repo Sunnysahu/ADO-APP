@@ -11,7 +11,10 @@ namespace ADO_APP.DB_Data
         public static string GetConnectionString()
         {
             //string myConnection = "Data Source=MSI;Database=ADOTEST; Initial Catalog=sspi";
-            string myConnection = "Data Source=MSI;Initial Catalog=ADOTEST;Integrated Security=True;";
+
+
+            //string myConnection = "Data Source=MSI;Initial Catalog=ADOTEST;Integrated Security=True;";
+            string myConnection = "Data Source=MSI;Initial Catalog=company;Integrated Security=True;";
 
             return myConnection;
 
