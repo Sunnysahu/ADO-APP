@@ -88,3 +88,24 @@
 	- ExecuteScalarAsync() --> Asynchronously executes the command and returns the first column of the first row in the result set.
 
 
+## For ExecuteScalar Example
+```
+
+create database company
+go
+use company
+go
+create table Employee(
+empid int primary key,
+empname nvarchar(max),
+salary decimal)
+go
+insert into Employee values(1, 'Sunny', 150000)
+insert into Employee values(2, 'Sanjana', 50000)
+insert into Employee values(3, 'Sanu', 10000)
+go
+
+select * from Employee
+
+select * from Employee where empid=1
+```
