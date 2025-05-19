@@ -66,3 +66,25 @@
 		// Adds the customer's mobile number as a parameter
 		cmd.Parameters.AddWithValue("@customermobile", phoneno);
 	```
+
+- ExecuteScalar() --> Returns the Object <--> first column of the first row in the result set returned by the query. Extra columns or rows are ignored.
+
+- ExecuteReader() --> Returns a SqlDataReader object that can be used to read the rows returned by the query.
+
+- ExecuteNonQuery() --> Returns the number of rows affected by the query. This is used for INSERT, UPDATE, DELETE statements.
+
+### Optionals
+	- ExecuteXmlReader() --> Returns an XmlReader object that can be used to read XML data returned by the query.
+	- ExecuteReaderAsync() --> Asynchronously executes the command and returns a SqlDataReader object.
+	- ExecuteNonQueryAsync() --> Asynchronously executes the command and returns the number of rows affected.
+	- ExecuteScalarAsync() --> Asynchronously executes the command and returns the first column of the first row in the result set.
+	- ExecuteXmlReaderAsync() --> Asynchronously executes the command and returns an XmlReader object.
+	- ExecuteReaderAsync() --> Asynchronously executes the command and returns a SqlDataReader object.
+	- ExecuteNonQueryAsync() --> Asynchronously executes the command and returns the number of rows affected.
+	- ExecuteScalarAsync() --> Asynchronously executes the command and returns the first column of the first row in the result set.
+	- ExecuteXmlReaderAsync() --> Asynchronously executes the command and returns an XmlReader object.
+	- ExecuteReaderAsync() --> Asynchronously executes the command and returns a SqlDataReader object.
+	- ExecuteNonQueryAsync() --> Asynchronously executes the command and returns the number of rows affected.
+	- ExecuteScalarAsync() --> Asynchronously executes the command and returns the first column of the first row in the result set.
+
+

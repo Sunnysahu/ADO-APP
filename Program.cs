@@ -25,9 +25,7 @@ public class Customer
             cmd.Parameters.Add(new SqlParameter("@customeremail", SqlDbType.VarChar, 50)).Value = email;
             cmd.Parameters.AddWithValue("@customermobile", phoneno);
 
-            // ExecuteScalar() --> Returns the first column of the first row in the result set returned by the query. Extra columns or rows are ignored.
-            // ExecuteReader() --> Returns a SqlDataReader object that can be used to read the rows returned by the query.
-            // ExecuteNonQuery() --> Returns the number of rows affected by the query. This is used for INSERT, UPDATE, DELETE statements.
+           
 
 
             connection.Open();
