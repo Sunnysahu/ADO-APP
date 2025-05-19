@@ -29,6 +29,7 @@ public class Customer
             // ExecuteReader() --> Returns a SqlDataReader object that can be used to read the rows returned by the query.
             // ExecuteNonQuery() --> Returns the number of rows affected by the query. This is used for INSERT, UPDATE, DELETE statements.
 
+
             connection.Open();
 
 
