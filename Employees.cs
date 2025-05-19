@@ -10,7 +10,7 @@ namespace ADO_APP
         {
             try
             {
-                SqlConnection connection = new SqlConnection(ConnString.GetConnectionString());
+                SqlConnection connection = new SqlConnection(ConnString.GetConnectionStringForExecuteScalar());
                 SqlCommand command = new SqlCommand("select empname from Employee", connection);
 
                 connection.Open();

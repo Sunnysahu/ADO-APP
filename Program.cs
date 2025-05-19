@@ -18,7 +18,7 @@ public class Customer
 
         try
         {
-            SqlConnection connection = new SqlConnection(ConnString.GetConnectionString());
+            SqlConnection connection = new SqlConnection(ConnString.GetConnectionStringforNonQuery());
             SqlCommand cmd = new SqlCommand("Sp_CreateCustomer", connection); // Stored Procedure Name 
             cmd.CommandType = System.Data.CommandType.StoredProcedure; // Command Type
             cmd.Parameters.AddWithValue("@customername", name);
