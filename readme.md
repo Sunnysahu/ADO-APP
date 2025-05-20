@@ -109,3 +109,42 @@ select * from Employee
 
 select * from Employee where empid=1
 ```
+
+
+# Task by Sir
+
+- MYSQL SERVER CODE
+```
+create database person
+
+use person
+
+create table persontable(
+firstname nvarchar(20) not null,
+lastname nvarchar(30) null,
+email nvarchar(100) not null primary key,
+mobilenumber decimal unique,
+createddate Date
+)
+
+create procedure sp_insertdata (@firstname nvarchar(20), @lastname nvarchar(30), @email nvarchar(100), @mobilenumber decimal, @createddate Date)
+as
+
+begin 
+
+insert into persontable values (@firstname, @lastname, @email, @mobilenumber, @createddate )
+
+end
+go
+
+exec sp_insertdata 'Sunny', 'Sahu', 'sunny@example.com', 1234567890, '2025-05-20';
+
+delete from persontable where firstname='dsads';
+
+delete from persontable
+
+select * from persontable
+
+```
+
+- C# CODE check the TasyBySir.cs File

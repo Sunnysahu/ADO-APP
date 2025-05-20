@@ -25,5 +25,38 @@ namespace ADO_APP.DB_Data
             return myConnection;
 
         }
+
+        public static string GetConnectionStringPersonExecuteScalar()
+        {
+            string myConnection = "Data Source=MSI;Initial Catalog=person;Integrated Security=True;";
+            //string myConnection = "Data Source=MSI;Database=person; Initial Catalog=sspi";
+
+            return myConnection;
+        }
+
+        public static (string[] NameArray, string Email, string Phone) GetDetails()
+        {
+            Console.Write("Enter Name : ");
+            string name = Console.ReadLine();
+            string[] nameArray = { };
+            if (name != "")
+            {
+                Console.WriteLine("nice");
+                //Console.WriteLine(nameArray.Length);
+                nameArray = name.Split(" ");
+            }
+
+            Console.Write("Enter Email : ");
+            string email = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Enter Mobile No. : ");
+            Console.WriteLine();
+            string phoneno = Console.ReadLine();
+            Console.WriteLine();
+
+
+            return (nameArray, email, phoneno);
+        }
+
     }
 }
