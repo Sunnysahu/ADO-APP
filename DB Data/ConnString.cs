@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,15 @@ namespace ADO_APP.DB_Data
             return myConnection;
         }
 
+        public static string GetConnectionStringTwillioEmployeeExecuteScalar()
+        {
+            string myConnection = "Data Source=MSI;Initial Catalog=ADOEmployee;Integrated Security=True;Encrypt=False;";
+
+            //string myConnection = "Data Source=MSI;Database=Employee; Initial Catalog=sspi";
+
+            return myConnection;
+        }
+
         public static (string[] NameArray, string Email, string Phone) GetDetails()
         {
             Console.Write("Enter Name : ");
@@ -56,6 +66,13 @@ namespace ADO_APP.DB_Data
 
 
             return (nameArray, email, phoneno);
+        }
+
+        public static string Generate4DigitOTP()
+        {
+            Random random = new Random();
+            int otp = random.Next(1000, 9999);
+            return otp.ToString();
         }
 
     }

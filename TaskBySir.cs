@@ -6,7 +6,7 @@ namespace ADO_APP
 {
     public class TaskBySir
     {
-        public static void Main(string[] args)
+        public static void Main3(string[] args)
         {
             var details = ConnString.GetDetails();
             if (details.NameArray.Length < 1)
